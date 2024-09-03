@@ -1,0 +1,124 @@
+.cabecera{
+    color:white;
+    background-color:darkgray;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border: 10px solid;
+    text-decoration: none;
+   border-radius: 0.9rem;
+}   
+h3{
+    color: black;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.cita{
+    color:black;
+    background-color:gainsboro;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    text-decoration: none;
+    margin: 1px;
+    font-style: italic;
+}
+.parrafo{
+    color: black;
+    font-size: 1rem;
+    font-size: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.caja,
+.cajaDestacada{
+    padding: 15px;
+    margin: 15px 0; 
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 70px;    
+}
+.cajaDestacada{
+    border: 3px solid;
+    background-color:khaki;
+}
+.relativo{
+    position: relative;
+    top: 10px; 
+    left: 10px; 
+    background-color: #dfefff; 
+    padding: 10px; 
+    margin-bottom: 50px; 
+    border: 1px solid #000; 
+    border-radius: 8px; 
+}
+.absoluto{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    background-color: #088171; 
+    padding: 10px; 
+    border: 1px solid #000; 
+    border-radius: 8px; 
+    width: 750px; 
+    color:#dfefff
+}
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue; /* Cambia el color de fondo del body */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente del encabezado (h1) */
+    }
+
+    section {
+        width: 90%; /* Ajusta el ancho de la sección */
+        padding: 10px; /* Reduce el padding de la sección */
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));   
+    gap: 20px;
+    padding: 10px;
+}
+.grid-item{
+    background-color: aquamarine;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 8px;
+}
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: 1s ease-out;
+    margin: 30px;
+}
+.animacion:hover{
+    cursor:pointer;
+    background-color: aqua;
+
+}
+.mover{
+    width: 150px;
+    height: 150px;
+    background-color:darkorchid;
+    margin:30px;
+    border-radius: 100%;
+    display: flex;
+    animation: moverIzqADer 3s linear infinite; 
+}
+@keyframes moverIzqADer {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(100px); 
+    }
+    100% {
+        transform: translateX(0); /
+    }
+}
